@@ -4,14 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/bookmark.png" type="image/x-icon">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Bookmarks Website</title>
 </head>
 
 <body>
+    <section class="interface py-5">
+        <div class="container">
+            <div class="inner d-flex flex-column">
 
+                <h1 class="mb-5 position-relative align-self-center">Bookmarker</h1>
+
+                <main class="bookmarkForm d-flex flex-column gap-2 py-4">
+                    <h2 class="pb-4 text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                            class="fa-solid fa-bookmark"></i></h2>
+                    <label class="fw-bolder" for="siteName"><i class="fa-solid fa-book-bookmark pe-1"></i> Site
+                        Name</label>
+                    <input class="form-control mb-3" type="text" id="siteName" placeholder="Bookmark Name">
+
+                    <label class="fw-bolder" for="siteName"><i class="fa-solid fa-link"></i> Site
+                        URL</label>
+                    <input class="form-control" type="text" id="siteName" placeholder="Website URL">
+
+                    <button class="btn btn-orange mt-3 py-2 px-5 align-self-center">Submit</button>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <section class="websiteTable">
+        <div class="container">
+            <div class="inner">
+                <table class="bg-white w-100 text-center shadow-sm">
+                    <tr class="border-0 border-bottom">
+                        <th class="py-2">Index </th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr class="border-0 border-bottom">
+                        <td class="py-3"> {index} </td>
+                        <td> {Name} </td>
+                        <td><button class="btn btn-green"><i class="fa-solid fa-eye pe-1"></i> Visit</button></td>
+                        <td><button class="btn btn-red"><i class="fa-solid fa-trash"></i> Delete</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

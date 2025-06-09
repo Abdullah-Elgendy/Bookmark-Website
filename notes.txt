@@ -1,0 +1,18 @@
+Hover animation on h1
+
+gradient from left to right green to yellow on h2
+
+focus border color is yellow on input fields 
+
+submit button color is darker on hover
+
+icons:
+
+bookmark icon
+<i class="fa-solid fa-bookmark"></i>
+
+book icon
+<i class="fa-solid fa-book-bookmark"></i>
+
+link icon
+<i class="fa-solid fa-link"></i>
