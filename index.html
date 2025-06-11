@@ -27,9 +27,9 @@
 
                     <label class="fw-bolder" for="siteName"><i class="fa-solid fa-link"></i> Site
                         URL</label>
-                    <input class="form-control" type="text" id="siteName" placeholder="Website URL">
+                    <input class="form-control" type="text" id="siteUrl" placeholder="Website URL">
 
-                    <button class="btn btn-orange mt-3 py-2 px-5 align-self-center">Submit</button>
+                    <button id="submitBtn" class="btn btn-orange mt-3 py-2 px-5 align-self-center">Submit</button>
                 </main>
             </div>
         </div>
@@ -38,19 +38,14 @@
     <section class="websiteTable">
         <div class="container">
             <div class="inner">
-                <table class="bg-white w-100 text-center shadow-sm">
+                <table id="bookmarkTable" class="bg-white w-100 text-center shadow-sm">
                     <tr class="border-0 border-bottom">
                         <th class="py-2">Index </th>
                         <th>Website Name</th>
                         <th>Visit</th>
                         <th>Delete</th>
                     </tr>
-                    <tr class="border-0 border-bottom">
-                        <td class="py-3"> {index} </td>
-                        <td> {Name} </td>
-                        <td><button class="btn btn-green"><i class="fa-solid fa-eye pe-1"></i> Visit</button></td>
-                        <td><button class="btn btn-red"><i class="fa-solid fa-trash"></i> Delete</button></td>
-                    </tr>
+                    
                 </table>
             </div>
         </div>
