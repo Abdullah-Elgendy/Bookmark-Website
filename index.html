@@ -18,17 +18,18 @@
 
                 <h1 class="mb-5 position-relative align-self-center">Bookmarker</h1>
 
-                <main class="bookmarkForm d-flex flex-column gap-2 py-4">
+                <main class="bookmarkForm d-flex flex-column gap-1 py-4">
                     <h2 class="pb-4 text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
                             class="fa-solid fa-bookmark"></i></h2>
                     <label class="fw-bolder" for="siteName"><i class="fa-solid fa-book-bookmark pe-1"></i> Site
                         Name</label>
-                    <input class="form-control mb-3" type="text" id="siteName" placeholder="Bookmark Name">
-
+                    <input oninput="validName()" class="form-control mb-3" type="text" id="siteName"
+                        placeholder="Bookmark Name">
+                    <p class="name-warning d-none fs-6 text-danger">Site name must contain at least 3 characters</p>
                     <label class="fw-bolder" for="siteName"><i class="fa-solid fa-link"></i> Site
                         URL</label>
-                    <input class="form-control" type="text" id="siteUrl" placeholder="Website URL">
-
+                    <input oninput="validURL()" class="form-control mb-3" type="text" id="siteUrl" placeholder="Website URL">
+                    <p class="url-warning d-none fs-6 text-danger">Site URL must be a valid one</p>
                     <button id="submitBtn" class="btn btn-orange mt-3 py-2 px-5 align-self-center">Submit</button>
                 </main>
             </div>
@@ -45,7 +46,7 @@
                         <th>Visit</th>
                         <th>Delete</th>
                     </tr>
-                    
+
                 </table>
             </div>
         </div>
